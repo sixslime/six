@@ -19,3 +19,5 @@ function six:_/impl/text/evaluate/do with storage six:var evaluate
 
 data remove storage six:in evaluate
 data remove storage six:var evaluate
+
+#-- DEV -- Move to 'ftext' with custom dimension datapack

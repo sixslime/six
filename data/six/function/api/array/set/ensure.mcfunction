@@ -6,12 +6,12 @@
 # <- result: obj[]
 # <- compared: obj[]
 #--------------------
-#> removes duplicates from <array>, making it a set.
-#> for any duplicate elements found, the lowest-index element is used in >result<.
+#> removes duplicates from <array>.
+#> for any duplicate elements found, the lowest-index element is used.
+#> >compared< is >result< but it's elements only contain the compared tags.
 #--------------------
-#- if <compare>: only the tags specified are taken into account.
-#  - both >result< and >compared< are <array> as a set, but >compared<'s elements only contain the nbt tags specified by <compare>.
-#- if <compare> is unspecified, >result< and >compared< are identical.
+#- if <compare>: compares only or without specified tags for each object. (See six:api/object/partial)
+# - >compared< and >result< are identical if <compare> is unspecified.
 #- an element must match ALL tags of another element to be considered a duplicate.
 #--------------------
 # ...
