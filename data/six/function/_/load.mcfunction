@@ -13,7 +13,7 @@ execute unless data storage six:settings {PERSIST:true} run function six:setting
 #declare storage six:in
 #declare storage six:out
 #declare storage six:const
-#declare storage six:event
+#declare storage six:hook
 
 #scoreboards
 scoreboard objectives add _six dummy
