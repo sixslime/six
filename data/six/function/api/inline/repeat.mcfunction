@@ -1,8 +1,8 @@
 #> six:api > inline/repeat
 #--------------------
-# -> function: string (function name)
+# -> function: $function
 # -> n: int
-# ~> with: string (storage identifier)
+# ~> with: $storage
 # => iter_var: string = "i"
 #--------------------
 # ...
