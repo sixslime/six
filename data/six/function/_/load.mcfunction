@@ -6,9 +6,6 @@
 # lantern
 scoreboard players set *six load-status 1
 
-#settings
-execute unless data storage six:settings {PERSIST:true} run function six:settings
-
 #declare storage six:var
 #declare storage six:dirty
 #declare storage six:in
