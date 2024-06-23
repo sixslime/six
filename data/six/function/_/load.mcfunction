@@ -4,7 +4,7 @@
 #--------------------
 
 # lantern
-scoreboard players set *six load.status 1
+scoreboard players set *six load-status 1
 
 #settings
 execute unless data storage six:settings {PERSIST:true} run function six:settings
@@ -13,7 +13,8 @@ execute unless data storage six:settings {PERSIST:true} run function six:setting
 #declare storage six:in
 #declare storage six:out
 #declare storage six:const
+#declare storage six:dirty
 #declare storage six:hook
+
 #scoreboards
-scoreboard objectives add six-var dummy
-#scorboard objectives add six-something dummy
+scoreboard objectives add _six dummy

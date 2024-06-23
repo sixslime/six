@@ -1,3 +1,3 @@
 #> six:uninstall
 
-scoreboard objectives remove six-var
+scoreboard objectives remove _six
