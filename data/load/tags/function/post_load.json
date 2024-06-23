@@ -1,5 +1,5 @@
 {
     "values": [
-        "#namespace:post_load"
+        "#six:post_load"
     ]
 }
