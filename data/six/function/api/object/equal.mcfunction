@@ -13,8 +13,7 @@
 # 0 - <a> and <b> are not equal
 #--------------------
 
-data modify storage six:var equal.target set from storage six:in equal.a
-execute store result score *equal.not -six run data modify storage six:var equal.target set from storage six:in equal.b
+execute store result score *equal.not -six run data modify storage six:in equal.a set from storage six:in equal.b
 scoreboard players set *equal.return --six 0
 execute if score *equal.not -six matches 0 run scoreboard players set *equal.return --six 1
 
