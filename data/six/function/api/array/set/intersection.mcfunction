@@ -16,23 +16,14 @@
 #- if <compare> is unspecified, >shared_a<, >shared_b<, and >shared< are all identical.
 #- if the size of <a> and <b> are known, set <a> to the smaller of the two for maximum performance.
 #--------------------
-# 0 - <a> and <b> have no elements in common.
-# 1 - <a> and <b> have at least 1 intersection.
+# ...
 #--------------------
 
 data modify storage six:out intersection.shared_a set value []
 data modify storage six:out intersection.shared_b set value []
 data modify storage six:out intersection.shared set value []
-scoreboard players set *intersection.return --six 0
 
-data merge storage six:in {repeat:{function:"six:_/impl/array/set/intersection/iter", with: "six:in intersection"}}
-execute store result storage six:in repeat.n int 1 if data storage six:in intersection.a[]
-function six:api/inline/repeat
+execute if data storage six:in intersection.a[] run function six:_/impl/array/set/intersection/each
 
 data remove storage six:in intersection
 data remove storage six:var intersection
-scoreboard players reset *intersection.match -six
-scoreboard players reset *intersection.tags -six
-
-execute if data storage six:out intersection.shared_a[] run scoreboard players set *intersection.return --six 1
-return run scoreboard players get *intersection.return --six
