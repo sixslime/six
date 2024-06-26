@@ -9,6 +9,12 @@ data modify storage six:in partial.object set from storage six:var intersection.
 data modify storage six:in partial.get set from storage six:in intersection.compare
 function six:api/object/partial
 
+#>---- D E B U G --------
+say A ITEM
+data modify storage loggr:in log.message set from storage six:var intersection.a_item
+function loggr:api/log
+#>--------------
+
 data modify storage six:var intersection.a_compare set from storage six:out partial.result
 data modify storage six:var intersection.matches set value []
 function six:_/impl/array/set/intersection/each.1 with storage six:var intersection
