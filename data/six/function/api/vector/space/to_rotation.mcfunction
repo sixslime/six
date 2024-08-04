@@ -19,3 +19,6 @@ data modify storage six:var to_rotation.y set from storage six:in to_rotation.ve
 data modify storage six:var to_rotation.z set from storage six:in to_rotation.vector[2]
 
 execute positioned 0 0 0 align xyz summon marker run function six:_/impl/vector/space/to_rotation/do with storage six:var to_rotation
+
+data remove storage six:in to_rotation
+data remove storage six:var to_rotation
