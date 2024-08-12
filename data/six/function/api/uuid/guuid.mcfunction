@@ -1,4 +1,4 @@
-#> six:api > meta/guuid
+#> six:api > uuid/guuid
 #--------------------
 # -> UUID: uuid
 #--------------------
@@ -47,8 +47,8 @@ execute store result score *guuid.3 -six run scoreboard players operation *guuid
 execute store result storage six:var guuid.e int 1 run scoreboard players operation *guuid.2 -six %= *256 --six
 execute store result storage six:var guuid.f int 1 run scoreboard players operation *guuid.3 -six /= *256 --six
 
-function six:_/impl/meta/guuid/get_hexes with storage six:var guuid
-function six:_/impl/meta/guuid/concat_uuid with storage six:var guuid
+function six:_/impl/uuid/guuid/get_hexes with storage six:var guuid
+function six:_/impl/uuid/guuid/concat_uuid with storage six:var guuid
 
 scoreboard players reset *guuid.0 -six
 scoreboard players reset *guuid.1 -six

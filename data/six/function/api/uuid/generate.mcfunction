@@ -1,4 +1,4 @@
-#> six:api > inline/gen_uuid
+#> six:api > uuid/generate
 #--------------------
 # ...
 #--------------------
@@ -11,4 +11,4 @@
 # ...
 #--------------------
 
-execute summon marker run function six:_/impl/inline/gen_uuid/gen
+execute summon marker run function six:_/impl/uuid/generate/do

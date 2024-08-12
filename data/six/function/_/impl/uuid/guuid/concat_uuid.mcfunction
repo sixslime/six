@@ -1,4 +1,4 @@
-#> six:_/impl/inline/guuid/concat_uuid
+#> six:_/impl/uuid/guuid/concat_uuid
 #--------------------
 # @api
 #--------------------

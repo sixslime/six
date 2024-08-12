@@ -1,4 +1,4 @@
-#> six:_/impl/inline/guuid/get_hexes
+#> six:_/impl/uuid/guuid/get_hexes
 #--------------------
 # @api
 #--------------------
