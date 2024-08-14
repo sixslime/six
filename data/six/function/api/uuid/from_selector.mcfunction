@@ -4,9 +4,12 @@
 #--------------------
 # <- result[]: {UUID: uuid}
 #--------------------
-#> converts a <selector> into a list of UUIDs.
+#> gets the list of UUIDs of entities matching <selector>.
 #--------------------
-# ...
+#- >result< preserves the order in which <selector> selects entities.
+#- it is of note that >result< is not a list of raw UUIDs, but a list of {UUID: uuid} objects.
+# - this is often more convenient to work with, raw UUIDs cannot be indexed into.
+# - a list of raw UUIDs can be made trivially with `execute as <selector> run data modify storage ... append from entity @s UUID`
 #--------------------
 # ...
 #--------------------
