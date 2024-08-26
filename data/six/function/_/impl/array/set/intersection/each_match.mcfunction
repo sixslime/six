@@ -5,12 +5,6 @@
 
 data modify storage six:var intersection.b_item set from storage six:var intersection.matches[-1]
 
-#>---- D E B U G --------
-say B ITEM
-data modify storage loggr:in log.message set from storage six:var intersection.b_item
-function loggr:api/log
-#>--------------
-
 data modify storage six:in partial.object set from storage six:var intersection.b_item
 data modify storage six:in partial.get set from storage six:in intersection.compare
 function six:api/object/partial

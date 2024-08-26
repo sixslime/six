@@ -19,11 +19,6 @@
 # ...
 #--------------------
 
-#>---- D E B U G --------
-data modify storage loggr:in log.message set from storage six:in intersection
-function loggr:api/log
-#>--------------
-
 data modify storage six:out intersection.shared_a set value []
 data modify storage six:out intersection.shared_b set value []
 data modify storage six:out intersection.shared set value []
