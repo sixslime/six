@@ -3,7 +3,6 @@
 # @LOAD
 #--------------------
 
-# lantern
 scoreboard players set *six load-status 1
 
 #declare storage six:var

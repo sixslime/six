@@ -1,6 +1,6 @@
 {
 	"pack": {
 		"pack_format": 61,
-		"description": "The six (hundredth) standard datapack library. .sixSlime"
+		"description": "A pure datapack library."
 	}
 }
